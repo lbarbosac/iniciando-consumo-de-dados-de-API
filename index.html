@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <form id="pesquisar">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="search" name="nome-cidade" id="nome-cidade" placeholder="Buscar cidade...">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+        <div id="clima">
+            <h1 id="titulo">Viamão, RS</h1>
+
+            <div id="infos">
+                <div id="tempo">
+                    <img id="img-tempo" src="" alt="">
+                    <div>
+                        <p id="temperatura">32</p>
+                        <p id="descricao-tempo">Ensolarado</p>
+                    </div>
+                </div>
+                <div id="outras-infos">
+                    <div class="info">
+                        <i id="icone-temperatura-max" class="fa-solid fa-temperature-high"></i>
+                        <div>
+                            <h2>Temperatura Max.</h2>
+                            <p id="temp-max">
+                                32<sup>°C</sup>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <i id="icone-temperatura-min" class="fa-solid fa-temperature-low"></i>
+                        <div>
+                            <h2>Temperatura Min.</h2>
+                            <p id="temp-min">
+                                12<sup>°C</sup>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <i id="icone-humidade" class="fa-solid fa-droplet"></i>
+                        <div>
+                            <h2>Humidade</h2>
+                            <p id="humidade">
+                                50%
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <i id="icone-vento" class="fa-solid fa-wind"></i>
+                        <div>
+                            <h2>Vento</h2>
+                            <p id="vento">
+                                50Km
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="alerta"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

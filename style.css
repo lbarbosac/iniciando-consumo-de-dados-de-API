@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#3b82f6, #4a7dff);
+}
+
+#container {
+    background-color: #f0f8ff;
+    border-radius: 1.1rem;
+    padding: 1rem;   
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#pesquisar {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    border: .02rem solid #bdbdbd;
+    border-radius: .7rem;
+    padding: .3rem .8rem;
+}
+
+#pesquisar input {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+}
+
+#pesquisar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#clima {
+    display: none;
+    margin-top: 1.2rem;
+}
+
+#clima.depois {
+    display: block;
+}
+
+#clima #titulo {
+    text-align: center;
+    margin-bottom: .4rem;
+    font-weight: 600;
+    color: #372f3f;
+}
+
+#tempo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    background: linear-gradient(90deg, #5a7cdc, #606dde);
+    border-radius: 1.3rem;
+    padding: 1.3rem;
+    color: #fff;
+}
+
+#img-tempo {
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0, 0.2));
+}
+
+#temperatura {
+    font-size: 50px;
+}
+
+#descricao-tempo {
+    font-weight: 500;
+    text-transform: capitalize; /*deixa sempre a primeira letra em maiusculo*/
+}
+
+#outras-infos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 2rem;
+}
+
+#outras-infos .info {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: .2rem .7rem;
+    border-radius: .6rem;
+    box-shadow: 0px 0px 5px rgba(0 ,0, 0 ,0.3);
+    background-color: #fff;
+    gap: 10px;
+}
+
+#outras-infos .info h2 {
+    font-size: 12px;
+    font-weight: 600; /*grossura da fonte*/
+}
+
+#outras-infos .info i {
+    text-align: center;
+    font-size: 20px;
+    width: 20%;
+}
+
+#icone-temperatura-max {
+    color: #7f1d1d;
+}
+
+#icone-temperatura-min {
+    color: #0284c7;
+}
+
+#icone-humidade {
+    color: #0ea5e9;
+}
+
+#icone-vento {
+    color: #ae5cac;
+}
