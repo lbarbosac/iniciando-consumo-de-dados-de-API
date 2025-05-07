@@ -47,7 +47,7 @@ function colocarInfos(json) {
     document.querySelector('#temp-max').innerHTML = `${json.tempMx.toFixed(0).toString().replace('.', ',')} <sup>°C</sup>`;
     document.querySelector('#temp-min').innerHTML = `${json.tempMin.toFixed(0).toString().replace('.', ',')} <sup>°C</sup>`;
     document.querySelector('#humidade').innerHTML = `${json.humidity}%`;
-    document.querySelector('#vento').innerHTML = `${json.windSpeed.toFixed(0)}%`;
+    document.querySelector('#vento').innerHTML = `${json.windSpeed.toFixed(0)}km/h`;
 }
 
 function depoisAlerta(msg) {
