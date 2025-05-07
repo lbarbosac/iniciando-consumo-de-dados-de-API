@@ -31,7 +31,7 @@ document.querySelector('#pesquisar').addEventListener('submit', async (event) =>
             humidity: json.main.humidity,
         });
     } else {
-        depoisAlerta('Não foi possível localizar...')
+        depoisAlerta('Não foi possível localizar essa cidade ⚠️');
     }
 });
 
