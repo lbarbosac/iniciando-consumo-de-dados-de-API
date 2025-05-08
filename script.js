@@ -1,4 +1,4 @@
-
+// evento submit envia dados para api, 
 document.querySelector('#pesquisar').addEventListener('submit', async (event) => {
     event.preventDefault(); // tira as configuracoes ja colocadas pelo js
 
@@ -16,7 +16,7 @@ document.querySelector('#pesquisar').addEventListener('submit', async (event) =>
     const resultado = await fetch(urlAPI);
     const json = await resultado.json();
 
-    // console.log(json); se o json for = a 200 esta correto
+    console.log(json); 
 
     if (json.cod === 200) {
         colocarInfos({
@@ -31,7 +31,9 @@ document.querySelector('#pesquisar').addEventListener('submit', async (event) =>
             humidity: json.main.humidity,
         });
     } else {
+        document.querySelector('#alerta').classList.add('ativar-alerta');
         depoisAlerta('Não foi possível localizar essa cidade ⚠️');
+        setTimeout(function(){ location.reload(); }, 2500); // recarrega a página após 2,5 segundos
     }
 });
 

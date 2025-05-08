@@ -55,7 +55,6 @@ body {
 #clima #titulo {
     text-align: center;
     margin-bottom: .4rem;
-    font-weight: 600;
     color: #372f3f;
 }
 
@@ -71,7 +70,7 @@ body {
 }
 
 #img-tempo {
-    filter: drop-shadow(2px 2px 2px rgba(0,0,0, 0.2));
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0, 0.2)); /*faz com que a sombra so pegue em volta da img, não fique aquele quadrado*/
 }
 
 #temperatura {
@@ -79,7 +78,6 @@ body {
 }
 
 #descricao-tempo {
-    font-weight: 500;
     text-transform: capitalize; /*deixa sempre a primeira letra em maiusculo*/
 }
 
@@ -103,7 +101,6 @@ body {
 
 #outras-infos .info h2 {
     font-size: 12px;
-    font-weight: 600; /*grossura da fonte*/
 }
 
 #outras-infos .info i {
@@ -128,9 +125,10 @@ body {
     color: #ae5cac;
 }
 
-#alerta {
+.ativar-alerta {
     display: flex;
     justify-content: center;
     padding: 1rem;
     font-size: 1.04rem;
+    color: #ff3333;
 }
